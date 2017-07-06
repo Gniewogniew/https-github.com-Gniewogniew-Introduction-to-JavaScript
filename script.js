@@ -1,18 +1,9 @@
-var arrayNew = document.getElementsByTagName('select');
+document.getElementById("menu").addEventListener("change", MyFunction);
 
 var element = document.getElementById('content');
 
-function myFunction(){
-    
-    var style = this.id;
-    var value = this.value;
-    
+function MyFunction(event) {
+    var style = event.target.id;
+    var value = event.target.value;
     element.style[style] = value;
-    
-}
-
-for( var i = 0; i < arrayNew.length; i++ ){
-    
-    arrayNew[i].addEventListener( 'change', myFunction );
-    
 }
