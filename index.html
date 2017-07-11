@@ -6,24 +6,15 @@
     </head>
     <body>
       <div id="menu"> 
-        <label for="background">Background color:</label>
-            <select color id="background">
-              <option value="blue">Blue</option> 
-              <option value="red">Red</option> 
-              <option value="green">Green</option> 
-            </select>
+        <label type for="background">Background color:</label>
+            <input id="background" type="color">
+            </input>
         <label for="width">Width:</label>
-           <select value id="width">
-              <option value="300px">300</option>
-              <option value="400px">400</option>
-              <option value="500px">500</option>
-            </select>
+           <input id="width" type="number" value="300px" data-unit="px">
+            </input>
         <label for="height">Height:</label>
-           <select value id="height">
-              <option value="300px">300</option>
-              <option value="400px">400</option>
-              <option value="500px">500</option>
-             </select>
+           <input id="height" type="number" value="300px" data-unit="px">
+             </input>
          </div>
        <div id="content" style="background:blue; width:300px; height:300px;"></div>
        <script src="script.js"></script> 
